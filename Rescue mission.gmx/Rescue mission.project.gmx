@@ -32,6 +32,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_pantallaCarga</room>
+    <room>rooms\rm_menuInicial</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
