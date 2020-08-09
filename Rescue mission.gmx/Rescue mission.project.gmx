@@ -5,19 +5,43 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\sprite1</sprite>
+    <sprites name="Cartas">
+      <sprites name="Marcos">
+        <sprite>sprites\spr_marco_rojo</sprite>
+        <sprite>sprites\spr_marco_verde</sprite>
+        <sprite>sprites\spr_marco_amarillo</sprite>
+        <sprite>sprites\spr_marco_blanco</sprite>
+        <sprite>sprites\spr_marco_celeste</sprite>
+      </sprites>
+      <sprites name="Imagenes">
+        <sprite>sprites\spr_carta_ataque_01</sprite>
+      </sprites>
+    </sprites>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shader0.shader</shader>
+  </shaders>
   <objects name="objects">
     <objects name="Entidades">
       <objects name="Cartas">
         <object>objects\int_carta</object>
+        <object>objects\int_carta_ataque</object>
+        <object>objects\carta_ataque_01</object>
       </objects>
       <objects name="Jugador">
         <object>objects\int_jugador</object>
+        <object>objects\obj_jugador</object>
       </objects>
       <objects name="Enemigo">
         <object>objects\int_enemigo</object>
+        <object>objects\obj_enemigo</object>
       </objects>
       <objects name="Laberinto">
         <object>objects\int_laberinto</object>
@@ -28,6 +52,13 @@
       <objects name="Acompaniante">
         <object>objects\int_acompaniante</object>
       </objects>
+    </objects>
+    <object>objects\obj_atributos</object>
+    <objects name="Botones">
+      <object>objects\btn_jugar</object>
+    </objects>
+    <objects name="Peleas">
+      <object>objects\obj_mano</object>
     </objects>
   </objects>
   <rooms name="rooms">
